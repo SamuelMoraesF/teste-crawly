@@ -1,0 +1,6 @@
+.dockerignore
+.gitignore
+.php*.xml
+Dockerfile
+README.md
+vendor/

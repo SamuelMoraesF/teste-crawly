@@ -1,0 +1,27 @@
+{
+    "name": "samuel/avaliacao-tecnica",
+    "description": "Avaliação técnica para a Crawly",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Samuel Moraes",
+            "email": "samuel@samuelmoraes.com"
+        }
+    ],
+    "scripts": {
+        "start": "php run.php",
+        "tests": "XDEBUG_MODE=coverage phpunit tests --coverage-text --coverage-filter=src --colors=always"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Project\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
